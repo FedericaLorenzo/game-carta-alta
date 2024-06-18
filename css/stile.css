@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-image: radial-gradient(rgb(178, 100, 230), #3444f7);
+}
+
+h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 60%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  height: 90%;
+  border-radius: 2rem;
+  background-color: rgba(48, 15, 138, 0.4);
+  font-size: 6rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.card.active {
+  background-color: white;
+}
+
+.card span {
+  display: none;
+}
+
+.card.active span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  margin: 0 1.5rem;
+  border: 1px solid #3444f7;
+  border-radius: 1rem;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.btn:hover {
+  background-color: #1e278f;
+  color: white;
+  cursor: pointer;
+}
+
+.message-title {
+  font-size: 2rem;
+  height: 3rem;
+}
+
+.win {
+  background: url("https://cdn.pixabay.com/animation/2023/10/11/13/40/13-40-01-58_512.gif");
+}
+
+#bottone-gioca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
